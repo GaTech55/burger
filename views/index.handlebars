@@ -1,21 +1,17 @@
-<h1>Burgers!</h1>
-
-<h2>Burgers that are not sleepy!</h2>
+<h1>Eat-Da-Burger!</h1>
 
 <ul>
   {{#each burger}}
-    {{#unless sleepy}}
-      {{> burger/burger-block sleep=true}}
+    {{#unless devoured}}
+      {{> burger/burger-block devoured=true}}
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Eat-Da-Burger!</h2>
-
 <ul>
   {{#each burger}}
-    {{#if sleepy}}
-      {{> burger/burger-block sleep=false}}
+    {{#if devoured}}
+      {{> burger/burger-block devoured=false}}
     {{/if}}
   {{/each}}
 </ul>
@@ -36,3 +32,4 @@
 
   <button type="submit">Add burger</button>
 </form>
+<p>Enter a burger you want to eat Click the "Submit" button.</p>
