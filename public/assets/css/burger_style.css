@@ -3,10 +3,10 @@ body {
   text-align: center;
 }
 
-/* li {
+li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  list-style-type: none;
 }
 
 .label {
@@ -21,4 +21,4 @@ body {
 
 .form-group {
   margin-bottom: 5px;
-} */
+}
