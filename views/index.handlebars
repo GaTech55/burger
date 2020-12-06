@@ -1,10 +1,10 @@
+
+<img src="https://media.istockphoto.com/photos/delicious-hamburgers-picture-id496389174?k=6&m=496389174&s=612x612&w=0&h=5P467Ob9B-V-V702d4EnHM0KXSxxE28yZguLyBGZyLo=" alt="Hamburgers">
 <h1>Eat-Da-Burger!</h1>
-<img src="../public/assets/img/hamburger.jpg" alt="hamburger">
-<img src="https://media.istockphoto.com/photos/delicious-hamburgers-picture-id496389174?k=6&m=496389174&s=612x612&w=0&h=5P467Ob9B-V-V702d4EnHM0KXSxxE28yZguLyBGZyLo=" alt="">
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      
+      {{> burgers/burger-block devoured=true}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -12,19 +12,19 @@
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-      
+      {{> burgers/burger-block devoured=false}}
     {{/if}}
   {{/each}}
 </ul>
 
 
-<form class="create-form">
+<form class="create-form" action="/api/burger" method="POST">
 
   <div class="form-group">
     <label for="ca">Burger Name:</label>
     <input type="text" id="ca" name="burger_name">
   </div>
 
-  <button type="submit">Add burger</button>
+  <button type="submit">Submit</button>
 </form>
 <p>Enter a burger you want to eat Click the "Submit" button.</p>

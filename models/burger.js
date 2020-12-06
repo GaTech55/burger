@@ -13,15 +13,16 @@ var burger = {
   },
 
   update: function (id, cb) {
-    orm.update("burgers", function (res) {
-      cb(res);
-    });
+    var id = "id=" + id;
+    orm.update(
+      "burgers",
+      {
+        devoured: true,
+      },
+      id,
+      cb
+    );
   },
-  // delete: function (condition, cb) {
-  //   orm.delete("burger", condition, function (res) {
-  //     cb(res);
-  //   });
-  // },
 };
 
 // Export the database functions for the controller (burgerController.js).
