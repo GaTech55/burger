@@ -1,9 +1,6 @@
 # burger
 
-Heroku link
-https://polar-inlet-14628.herokuapp.com/
-
-David K. Brown's Note Taker
+David K. Brown's Eat-Da-Burger App
 
 ## Table of Contents
 
@@ -23,36 +20,38 @@ David K. Brown's Note Taker
 
 ## Description
 
-The purpose of this project was to create an application that can be used to write, save, and delete notes. The application uses an express backend and saves/retrieves note data from a JSON file. The primary goal of the homework was to connect the frontend to the backend.
+The purpose of this project was to create an application that logs burgers using MySQL, Node, Express, Handlebars and a homemade ORM. The application follows the MVC design pattern and Handlebars to generate the HTML. From a user perspective they are able to submit new burgers and click a button to "devour" burgers which are tracked/saved in the database.
 
 ## Screenshots
 
-![NoteTaker](./public/assets/images/DavidBrownNoteTaker.png)
+![BurgerApp](./public/assets/images/BurgerApp.png)
 
 ## Acceptance-Criteria
 
 ```md
-Application should allow users to create and save notes.
+Application should allow users to input the names of burgers they'd like to eat.
 
-Application should allow users to view previously saved notes.
+Whenever a user submits a burger's name the app will display it waiting to be devoured.
 
-Application should allow users to delete previously saved notes.
+Each burger has a Devour It button that when clicked moves it to the devoured section.
+
+All of the burgers are stored in the database.
 ```
 
 ## Installation
 
-To access this project you will need to visit my GitHub page and the "Note Taker" repository. After the repository is cloned/forked you can make edits to the project in your repository. Any questions should be directed to [David Brown](mailto:gatech55@gmail.com). The project can be found here: [NoteTaker](https://github.com/GaTech55/NoteTaker). The Heroku site can be found here: [Heroku_NoteTaker](https://mysterious-falls-92142.herokuapp.com/).
+To access this project you will need to visit my GitHub page and the "Burger" repository. After the repository is cloned/forked you can make edits to the project in your repository. Any questions should be directed to [David Brown](mailto:gatech55@gmail.com). The project can be found here: [Buger](https://github.com/GaTech55/burger). The Heroku site can be found here: [Heroku_Burger](https://polar-inlet-14628.herokuapp.com/).
 
 ## Credits
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-[GitLab-11-Homework](https://gt.bootcampcontent.com/GT-Coding-Boot-Camp/gt-inc-fsf-pt-08-2020-u-c/tree/master/11-express/02-Homework)
+[GitLab-13-Homework](https://gt.bootcampcontent.com/GT-Coding-Boot-Camp/gt-inc-fsf-pt-08-2020-u-c/tree/master/13-MVC/02-Homework/Instructions)
 
 ## Contributing
 
 | **Commits** | **Contributor** |
 
-| 10| [GaTech55](https://github.com/GaTech55)|
+| 15| [GaTech55](https://github.com/GaTech55)|
 
 ## Copyright
 
